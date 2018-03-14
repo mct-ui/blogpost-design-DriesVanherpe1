@@ -1,3 +1,33 @@
+@font-face
+{
+    font-family: 'Inter UI';  font-weight: 400;
+    src: url('../fonts/Inter-UI-Regular.woff2') format('woff2'),url('../fonts/Inter-UI-Regular.woff') format('woff');
+}
+@font-face
+{
+    font-family: 'Inter UI';  font-weight: 400;
+     src: url('../fonts/Inter-UI-Bold.woff2') format('woff2'),url('../fonts/Inter-UI-Bold.woff') format('woff');
+}
+@font-face
+{
+    font-family: 'Droid Serif';  font-weight: 700;
+    src: url('../fonts/DroidSerif-Regular-webfont.woff2') format('woff2'),url('../fonts/DroidSerif-Regular-webfont.woff') format('woff');
+}
+@font-face
+{
+    font-family: 'Droid Serif';  font-weight: 700;
+    src: url('../fonts/DroidSerif-Italic-webfont.woff2') format('woff2'),url('../fonts/DroidSerif-Italic-webfont.woff') format('woff');
+}
+@font-face
+{
+    font-family: 'Droid Serif';  font-weight: 700;
+     src: url('../fonts/DroidSerif-Bold-webfont.woff2') format('woff2'),url('../fonts/DroidSerif-Bold-webfont.woff') format('woff');
+}
+@font-face
+{
+    font-family: 'Droid Serif';  font-weight: 700;
+    src: url('../fonts/DroidSerif-BoldItalic-webfont.woff2') format('woff2'),url('../fonts/DroidSerif-BoldItalic-webfont.woff') format('woff');
+}
 /*
     Elements: Page
     ---
@@ -5,8 +35,9 @@
 */
 
 html
-{ font-family: 'Helvetica Neue', Helvetica, arial, sans-serif;
-    font-size: 16px;  line-height: 1.5;  padding: 48px 24px 24px; color: #5c6366;
+{
+    font-family: 'Droid Serif', Georgia,serif;
+    font-size: 16px;  line-height: 1.5;  padding: 48px 24px 24px;     color: #5c6366;
 }
 
 body
@@ -22,12 +53,14 @@ body
  */
 
 ::-moz-selection
-{ color: white;
+{
+    color: white;
     background: #00e6a1;  text-shadow: none;
 }
 
 ::selection
-{ color: white;
+{
+    color: white;
     background: #00e6a1;  text-shadow: none;
 }
 
@@ -47,12 +80,7 @@ img
     ---
     Default markup for typographic elements
 */
-h1,
-h2,
-h3
-{
-    color: #17181a;
-}
+
 h1
 {
     font-size: 36px;  line-height: 40px;  margin: 0 0 48px;
@@ -66,6 +94,20 @@ h2
 h3
 {
     font-size: 18px;  line-height: 24px;  margin: 0 0 24px;
+}
+h1,
+h2,
+h3
+{
+    color: #17181a;
+    font-family: "Inter UI", Helvetica, arial, sans-serif;
+}
+
+h4,
+h5,
+h6
+{
+    font-size: 16px;  line-height: 24px;  margin: 0 0 24px;
 }
 
 p,
@@ -92,7 +134,8 @@ li ol
 }
 
 blockquote
-{ font-family: 'Times New Roman', serif; font-size: 23px;
+{
+    font-family: 'Times New Roman', serif;     font-size: 23px;
     font-style: italic;  line-height: 32px;  margin: 0 0 24px;
 }
 
@@ -107,15 +150,13 @@ figcaption
 }
 
 hr
-{ height: 1px;  margin: 0 0 24px;
-
-    border: 0;  background: LightGrey;
+{
+    height: 1px;  margin: 0 0 24px;  border: 0;  background: LightGrey;
 }
 
 a
-{ transition: all .1s ease-in-out;
-
-    color: #00e6a1;
+{
+    transition: all .1s ease-in-out;  color: #00e6a1;
 }
 
 a:visited,
@@ -174,10 +215,9 @@ a:focus
     *,
     *:before,
     *:after
-    { color: #000 !important;
-        background: transparent !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
-        box-shadow: none !important;  text-shadow: none !important;
+    {
+        color: #000 !important;  background: transparent !important;        /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */  box-shadow: none !important;  text-shadow: none !important;
     }
     a,
     a:visited
